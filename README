@@ -1,0 +1,12 @@
+This loads a 3D model, key.obj and displays it stereographically for red-green glasses.
+key.obj is in Wavefront format, and is loaded and displayed using the j3d library.
+
+The key is rendered from two points, corresponding to each eye. The views are transparent green and transparent red.
+This causes difficulty because the back of the obect is also partly visible, and confuses the effect.
+
+The key can be rotated using left and right arrow keys.
+
+TODO: Create an interpolation algorithm on each screen buffer before rendering.
+
+RUNNING THE APPLICATION
+run.bat compiles and runs the application, which runs in a MainFrame.
